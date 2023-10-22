@@ -5,12 +5,14 @@ export default function Footer() {
     return (
         <>
             <div className="container p-3 p-lg-5">
-                <div className="newsletter p-0 p-lg-5">
+                <div className="newsletter px-2 py-3 p-lg-5">
                 <h2 className='text-center fs-1'>Sign Up For An Appointment With The Doctors Today!</h2>
                 <div className="w-100 d-flex justify-content-center pt-5">
                 <form action="">
+                    <div className="d-flex flex-column align-items-center">
                     <input type="text" name='email' placeholder='You Email Address' /><br/>
-                    <button className='btn bg-white rounded-4 text-center mt-4 fs-4'>Subscribe</button>
+                    <button className='btn bg-white rounded-3 text-center mt-lg-4 mt-1 fs-4'>Subscribe</button>
+                    </div>
                 </form>
                 </div>
                 </div>

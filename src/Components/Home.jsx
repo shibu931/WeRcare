@@ -1,8 +1,11 @@
 import React from 'react'
+import Footer from './Footer'
+import Navbar from './Navbar'
 
 export default function Home() {
     return (
         <>
+            <Navbar/>
             {/* Banner */}
             <div className="hero-banner mb-5">
                 <div className="container">
@@ -28,7 +31,7 @@ export default function Home() {
             {/* Banner End*/}
 
             {/* USP Section */}
-            <div className="container px-lg-5 pb-5 mb-5">
+            <div className="container px-lg-5 pb-5 mb-4 mb-lg-5">
                 <div className="usp-section">
                     <div className="usp-box">
                         <h2 className='text-center display-5 fw-semibold'>5.0</h2>
@@ -58,11 +61,11 @@ export default function Home() {
             {/* Who we are */}
             <div className="container mb-5">
                 <div className="row row-cols-10 py-5 justify-content-center">
-                    <div className="col-sm-5">
-                        <img className='ps-lg-5' src={`${process.env.PUBLIC_URL}/assets/img/Vector (1).png`} alt="" />
+                    <div className="col-sm-5 mb-5">
+                        <img className='ps-lg-5' src={`${process.env.PUBLIC_URL}/assets/img/Vector (1).png`} width="100%" alt="" />
                     </div>
                     <div className="col-sm-5">
-                        <h2 className='fs-1 mb-5'>Who we are?</h2>
+                        <h2 className='fs-1 mb-4 mb-lg-5'>Who we are?</h2>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos et eos impedit quibusdam obcaecati ipsam quis voluptatibus, aut enim quos qui atque commodi provident laboriosam, quod consequuntur! Praesentium, iusto doloremque earum tempore molestias delectus ea cupiditate architecto voluptates. Libero facilis quidem expedita quae optio ullam ratione molestiae dolore cumque odit.</p>
                     </div>
                 </div>
@@ -73,20 +76,20 @@ export default function Home() {
             <div className="speciality-container py-5 mb-5">
                 <div className="container px-4 px-lg-5">
                     <h2 className='text-center text-black fs-1 my-5 py-4 fw-semibold'>Our Speciality</h2>
-                    <div className="row row-cols-2 row-cols-lg-4 g-3">
-                        <div className="col">
+                    <div className="row row-cols-1 row-cols-lg-4 g-3">
+                        <div className="col d-flex flex-column align-items-center">
                             <img src={`${process.env.PUBLIC_URL}/assets/img/Rectangle 18.png`} className='mb-4' alt="" />
                             <p className='text-center text-black fs-4'>Dermatology</p>
                         </div>
-                        <div className="col">
+                        <div className="col d-flex flex-column align-items-center">
                             <img src={`${process.env.PUBLIC_URL}/assets/img/Rectangle 20.png`} className='mb-4' alt="" />
                             <p className='text-center text-black fs-4'>Gynecology</p>
                         </div>
-                        <div className="col">
+                        <div className="col d-flex flex-column align-items-center">
                             <img src={`${process.env.PUBLIC_URL}/assets/img/Rectangle 21.png`} className='mb-4' alt="" />
                             <p className='text-center text-black fs-4'>Cardiology</p>
                         </div>
-                        <div className="col">
+                        <div className="col d-flex flex-column align-items-center">
                             <img src={`${process.env.PUBLIC_URL}/assets/img/Rectangle 22.png`} className='mb-4' alt="" />
                             <p className='text-center text-black fs-4'>Orthopedic</p>
                         </div>
@@ -98,7 +101,7 @@ export default function Home() {
             {/* USP 2 Section */}
             <div className="container px-4 px-lg-5 py-5 mb-5">
                 <h2 className='text-center fs-1 fw-semibold text-black mb-5'>Why you should choose us?</h2>
-                <div className="row row-cols-2 row-cols-lg-4 g-3">
+                <div className="row row-cols-1 row-cols-lg-4 g-3">
                     <div className="col usp-box-2">
                         <img src={`${process.env.PUBLIC_URL}/assets/img/stethoscope-147700_640 1.png`} className='mb-4' alt="" />
                         <p className='text-center text-black fs-4'>All Specialities</p>
@@ -161,7 +164,7 @@ export default function Home() {
                 </div>
             </div>
             {/* Testimonials End */}
-
+            <Footer/>
         </>
     )
 }

@@ -11,14 +11,14 @@ export default function Navbar() {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
-                        <li className="nav-item px-5">
-                            <Link className="nav-link text-dark fw-semibold" aria-current="page" to="#">I am a Doctor</Link>
+                        <li className="nav-item px-1 px-md-5 ">
+                            <Link className="nav-link text-dark fw-semibold" aria-current="page" to="/login">I am a Doctor</Link>
                         </li>
-                        <li className="nav-item px-5">
-                            <Link className="nav-link text-dark fw-semibold" to="#">I am a Patient</Link>
+                        <li className="nav-item px-1 px-md-5 ">
+                            <Link className="nav-link text-dark fw-semibold" to="/login">I am a Patient</Link>
                         </li>
-                        <li className="nav-item px-5">
-                            <Link className="nav-link text-dark fw-semibold" to="#">I am a Family Member</Link>
+                        <li className="nav-item px-1 px-md-5 ">
+                            <Link className="nav-link text-dark fw-semibold" to="/login">I am a Family Member</Link>
                         </li>
                     </ul>
                     <Link className='btn bg-white rounded-4' to="#">Book an appointment</Link>
